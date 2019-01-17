@@ -177,9 +177,9 @@ function draw() {
     cirGr.show();
     revolveFrame++;
     infoLabel.html("Showing Frames "+revolveFrame+"/"+revolveResol);
-    if(revolveFrame==revolveResol) {
+    if (revolveFrame == revolveResol + 20) {
       revolveFrame = 0;
-      cirGr.points = [];
+      cirGr = new circlesGroup(coeff);
     }
   }
 }
