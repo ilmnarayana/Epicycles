@@ -26,7 +26,7 @@ function setup() {
   button.mousePressed(calcAndStart);
   circlesSlider = createSlider(1, 2*maxCircles, maxCircles);
   circlesSlider.position(10, 420);
-  infoLabel = createElement('label', 'Draw a single loop in canvas');
+  infoLabel = createElement('label', 'Draw a single loop inside canvas');
   infoLabel.position(400, 10);
   var sv = circlesSlider.value();
   sliderLabel = createElement('label', 'Number of circles = ' + (sv+(sv%2)).toString());
